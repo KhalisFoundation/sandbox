@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "nlp": {
+      "corpora": [
+        "./corpus-en.json",
+        "./corpus-es.json",
+        "./corpus-hi.json"
+      ]
+    },
+    "console": {
+      "debug": true
+    },
+    "api-server": {
+      "port": 3300,
+      "serveBot": true
+    },
+    "msbf": {
+      "apiPath": "",
+      "messagesPath": "/api/messages"
+    }
+  },
+  "use": ["Basic", "LangEs", "LangHi", "ConsoleConnector", "ExpressApiServer", "DirectlineConnector", "MsbfConnector"]
+}
